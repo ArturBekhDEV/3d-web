@@ -44,7 +44,7 @@ export default function Banner() {
     <section className="banner" id="home">
       <Container>
         <Row className="items-test">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} className="center-header">
             <span className="tagline">Hello from nowhere!</span>
             <h1>
               <span className="wrap">I'm a {text}</span>
