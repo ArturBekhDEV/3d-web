@@ -8,16 +8,19 @@ const Nftcomponent = () => {
       title: "Sense.",
       description: "aASTROadventures series.",
       link3D: "https://prod.spline.design/tauTd6qIJinCrYJi/scene.splinecode",
+      link: "https://opensea.io/assets/ethereum/0x3a10b673a043746633918797a32ec5432c7c2281/1634738079724733",
     },
     {
       title: "Pain.",
       description: "aASTROadventures series.",
-      link3D: "https://prod.spline.design/RKQeKZLIYiag3H-2/scene.splinecode",
+      link3D: "https://prod.spline.design/OXNBHJ3AR6B9lBuw/scene.splinecode",
+      link: "https://opensea.io/assets/ethereum/0x3a10b673a043746633918797a32ec5432c7c2281/1632310608638498",
     },
     {
       title: "Collapse.",
       description: "aASTROadventures series.",
-      link3D: "https://prod.spline.design/OXNBHJ3AR6B9lBuw/scene.splinecode",
+      link3D: "https://prod.spline.design/RKQeKZLIYiag3H-2/scene.splinecode",
+      link: "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/109363574390239392834287033329924730476889134183197331643757345668203880120321",
     },
   ];
 
@@ -28,10 +31,12 @@ const Nftcomponent = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
         laudantium.
       </p>
-      <div className="my-items-list">
-        {arrInfo.map((item, index) => {
-          return <ProjectCard3D key={index} {...item} />;
-        })}
+      <div className="test-div">
+        <div className="my-items-list">
+          {arrInfo.map((item, index) => {
+            return <ProjectCard3D key={index} {...item} />;
+          })}
+        </div>
       </div>
     </section>
   );
