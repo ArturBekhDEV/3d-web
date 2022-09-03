@@ -28,10 +28,10 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-  const name = req.body.firstName + req.body.lastName;
-  const email = req.body.email;
-  const message = req.body.message;
-  const phone = req.body.phone;
+  const name = req.body.FirstName + req.body.LastName;
+  const email = req.body.Email;
+  const message = req.body.Message;
+  const phone = req.body.Phone;
   const mail = {
     from: name,
     to: "artbekh94@gmail.com",

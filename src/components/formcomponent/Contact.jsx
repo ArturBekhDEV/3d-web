@@ -15,11 +15,13 @@ const Contact = () => {
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
+    console.log(typeof value);
     setFormDetails({
       ...formDetails,
       [category]: value,
     });
   };
+  console.log(formDetails);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -35,6 +37,7 @@ const Contact = () => {
     setButtonSent("Send");
     let result = await response.json();
     console.log(result);
+
     setFormDetails(formInitialState);
     if (result.code === 200) {
       setStatus({
@@ -62,9 +65,9 @@ const Contact = () => {
                     type="text"
                     defaultValue={formDetails.firstName}
                     placeholder="First Name"
-                    onChange={(e) =>
-                      onFormUpdate("FirstName", e.target.defaultValue)
-                    }
+                    onChange={(e) => {
+                      onFormUpdate("firstName", e.target.value);
+                    }}
                   />
                 </Col>
                 <Col sm={6} className="px-1">
@@ -72,9 +75,7 @@ const Contact = () => {
                     type="text"
                     defaultValue={formDetails.lastName}
                     placeholder="Last Name"
-                    onChange={(e) =>
-                      onFormUpdate("LastName", e.target.defaultValue)
-                    }
+                    onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </Col>
                 <Col sm={6} className="px-1">
@@ -82,9 +83,7 @@ const Contact = () => {
                     type="telephone"
                     defaultValue={formDetails.phone}
                     placeholder="Phone Number"
-                    onChange={(e) =>
-                      onFormUpdate("Phone", e.target.defaultValue)
-                    }
+                    onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
                 <Col sm={6} className="px-1">
@@ -92,9 +91,7 @@ const Contact = () => {
                     type="email"
                     defaultValue={formDetails.email}
                     placeholder="Email Adress"
-                    onChange={(e) =>
-                      onFormUpdate("Email", e.target.defaultValue)
-                    }
+                    onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
                 <Col>
@@ -102,9 +99,7 @@ const Contact = () => {
                     row="6"
                     defaultValue={formDetails.message}
                     placeholder="Message"
-                    onChange={(e) =>
-                      onFormUpdate("Message", e.target.defaultValue)
-                    }
+                    onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
                   <button type="submit">
                     <span>{buttonSent}</span>
