@@ -15,8 +15,8 @@ console.log(process.env.EMAIL_PASS);
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "artbekh94@gmail.com",
-    pass: "weecmqlprwftszav",
+    user: "" /* тут ваш емейл якщо тест*/,
+    pass: "",
   },
 });
 contactEmail.verify((error) => {
@@ -49,3 +49,5 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+
+/* weecmqlprwftszav */
