@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Spline from "@splinetool/react-spline";
 
 const Contact = () => {
   const formInitialState = {
@@ -56,7 +57,7 @@ const Contact = () => {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-          <Col md={12}>
+          <Col md={8}>
             <h2>Get In Touch</h2>
             <form onSubmit={handleSubmit}>
               <Row>
@@ -118,6 +119,11 @@ const Contact = () => {
                 )}
               </Row>
             </form>
+          </Col>
+          <Col size={12} md={4}>
+            <div>
+              <Spline scene="https://prod.spline.design/fCZXGxIph6KTlJJn/scene.splinecode" />
+            </div>
           </Col>
         </Row>
       </Container>

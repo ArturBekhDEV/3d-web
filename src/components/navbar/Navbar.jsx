@@ -33,7 +33,7 @@ function NavBarMenu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="testbcgcolor">
           <Nav className="ms-auto">
             <Nav.Link
               href="#home"
@@ -64,18 +64,20 @@ function NavBarMenu() {
             </Nav.Link>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
+                <a href="https://github.com/ArturBekhDEV">
                   <AiFillGithub className="test-icon" />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/bekh_motion/">
                   <AiFillInstagram className="test-icon" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/artur-bekh-754063238/">
                   <AiFillLinkedin className="test-icon" />
                 </a>
               </div>
-              <button className="vvd">
-                <span>Conntact</span>
+              <button className="vvd" href="#contact">
+                <a href="#connect">
+                  <span>Conntact</span>
+                </a>
               </button>
             </span>
           </Nav>
