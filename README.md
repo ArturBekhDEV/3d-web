@@ -1,3 +1,8 @@
+https://3d-web-react-website.vercel.app/ check it out live!
+p.s To wotch 3d animation better on desktop..
+p.s.s mobile version currently fixing..
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
