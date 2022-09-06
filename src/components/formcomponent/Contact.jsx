@@ -120,11 +120,11 @@ const Contact = () => {
               </Row>
             </form>
           </Col>
-          <Col size={12} md={4}>
+          {/* <Col size={12} md={4}>
             <div>
               <Spline scene="https://prod.spline.design/fCZXGxIph6KTlJJn/scene.splinecode" />
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>

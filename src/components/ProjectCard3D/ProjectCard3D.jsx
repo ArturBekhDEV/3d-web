@@ -1,5 +1,4 @@
 import React from "react";
-import { Col } from "react-bootstrap";
 import Spline from "@splinetool/react-spline";
 
 const ProjectCard3D = ({ title, description, link3D, link }) => {

@@ -32,7 +32,7 @@ const responsive = {
 const Skills = () => {
   return (
     <section className="skill" id="skills">
-      <Container className="skill-media">
+      <div className="skill-media">
         <Row>
           <Col>
             <div className="skill-bx">
@@ -79,7 +79,7 @@ const Skills = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </section>
   );
 };
