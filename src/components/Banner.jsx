@@ -64,7 +64,7 @@ export default function Banner() {
               </button>
             </a>
           </Col>
-          <Col xs={5} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5}>
             <div className="object">
               <Spline scene="https://prod.spline.design/KKoTrCA0O4mcYlrG/scene.splinecode" />
             </div>

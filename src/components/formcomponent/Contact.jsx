@@ -57,7 +57,7 @@ const Contact = () => {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-          <Col md={8}>
+          <Col xs={12} md={12} xl={6} className="formsize">
             <h2>Get In Touch</h2>
             <form onSubmit={handleSubmit}>
               <Row>
@@ -95,7 +95,7 @@ const Contact = () => {
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
-                <Col>
+                <Col sm={12} className="px-1">
                   <textarea
                     row="6"
                     defaultValue={formDetails.message}
@@ -120,11 +120,11 @@ const Contact = () => {
               </Row>
             </form>
           </Col>
-          {/* <Col size={12} md={4}>
-            <div>
+          <Col xs={5} md={6} xl={5}>
+            <div className="object-contact">
               <Spline scene="https://prod.spline.design/fCZXGxIph6KTlJJn/scene.splinecode" />
             </div>
-          </Col> */}
+          </Col>
         </Row>
       </Container>
     </section>
