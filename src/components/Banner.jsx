@@ -53,14 +53,16 @@ export default function Banner() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
               fuga.
             </p>
-            <button
-              onClick={() => {
-                console.log("connect me!");
-              }}
-              className="vvd"
-            >
-              Let's Connect!
-            </button>
+            <a href="#connect">
+              <button
+                onClick={() => {
+                  console.log("connect me!");
+                }}
+                className="vvd"
+              >
+                Let's Connect!
+              </button>
+            </a>
           </Col>
           <Col xs={5} md={6} xl={5}>
             <div className="object">

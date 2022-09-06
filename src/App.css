@@ -452,7 +452,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   text-align: center;
   top: 65%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
   opacity: 0;
@@ -478,9 +478,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   text-align: center;
 }
-/*CONTACT */
-.test-contact {
+@media screen and (max-width: 1600px) {
+  .my-items-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.9);
+  }
 }
+@media screen and (max-width: 430px) {
+  .my-items-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.6);
+  }
+}
+/*CONTACT */
+
 .contact {
   padding: 60px 0 200px 0;
 }
