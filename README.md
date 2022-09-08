@@ -1,5 +1,6 @@
 https://3d-web-react-website.vercel.app/ check it out live!
-p.s To wotch 3d animation better on desktop..
+
+p.s To wotch 3d animation better on desktop..!
 p.s.s mobile version currently fixing..
 
 
